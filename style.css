@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+  --primaryColor: hsl(47, 88%, 63%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Set Backgroundcolor and font stuff*/
+body {
+  background: var(--primaryColor);
+  font-family: 'Figtree', sans-serif;
+  color: #333;
+}
+
+
+/*Content*/
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Card sizing and flexing items*/
+.content .flexbox {
+  border: 2px #333 solid;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+}
+
+
+/*Text under the picture*/
+.text-container {
+  margin: 20px;
+}
+
+/*Yellow Button*/
+.text-container h1 {
+  font-size: 14px;
+  display: inline-block;
+  background: var(--primaryColor);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.text-container h2 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 5px 10px 10px 0px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.text-container h3 {
+  font-size: 20px;
+}
+
+.text-container .description {
+  color: #a7a7a7;
+  font-size: 14px;
+  line-height: 1.4rem;
+  margin-top: 10px;
+}
+
+.text-container .autor-container {
+  display: flex;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.text-container .autor-container p {
+  align-self: center;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.content .flexbox .picture {
+  padding: 20px 20px 0px 20px;
+}
+
+.content .flexbox .picture img {
+  width: 100%;
+  border-radius: 10px;
+}
